@@ -1,0 +1,22 @@
+books
+
+id - INT - UNISIGNED - PRIMARY_KEY(NOTNULL - UNIQUE) - AUTOINCREMENT
+isbn - VARCHAR(16) - NOTNULL - UNIQUE
+title - VARCHAR(255) - NOTNULL
+author - VARCHAR(255) - NOTNULL
+description - TEXT - NULL
+publish_year - YEAR - NOTNULL
+edition_year - YEAR - NULL
+publisher - VARCHAR(255) - NOTNULL
+pages_number - UNSIGNED SMALLINT - NULL
+genre - VARCHAR(255) - NOTNULL
+languare - VARCHAR(255) - NOTNULL
+size - VARCHAR(255) - NULL
+price - DECIMAL(7,2) - NOTNULL
+discount_percent - DECIMAL(5,2) - NOTNULL - DEFAULT(0)
+is_last - TINYINT - NOTNULL - DEFAULT(0)
+is_digital - TINYINT - NOTNULL - DEFAULT(0)
+poster - VARCHAR(255) - NULL
+cover_type - VARCHAR(255) - NULL
+avg_rating - FLOAT(3,1) - NOTNULL - DEFAULT(0)
+weight_g - DOUBLE(7,2) - NULL
